@@ -3,14 +3,42 @@
 ## Latest Updates
 
 ### Version 0.0.10 (Unreleased)
-**New RPG Class System:**
-- Added Wizards, Paladins, Rogues, and Archers (RPG Series)
-- Added Skill Tree system with 100+ unique skill nodes
-- Added LNE expansions for all 4 classes (structures & weapons)
-- Added 20+ supporting mods (Spell Engine, Jewelry, Relics, etc.)
+**New RPG Class System - RuneScape-Inspired Gameplay:**
+
+*Core Classes (4):*
+- Wizards - Master arcane, fire, and frost magic
+- Paladins & Priests - Tank and heal allies with holy power
+- Rogues & Warriors - Strike fast or hit hard with martial skills
+- Archers - Dominate with ranged weapons and archery skills
+
+*LNE Expansions (4):*
+- LNE Archers, Paladins, Rogues, and Wizards Add-Ons
+- Class-specific structures with unique loot and equipment
+- Special craftable weapons with unique abilities
+
+*Skill & Progression Systems (3):*
+- Pufferfish's Skills - Customizable skill tree progression
+- Skill Tree (RPG Series) - 100+ skill nodes
+- RPG Skill Tree - Additional skill customization
+
+*Equipment & Combat (6):*
+- Jewelry - Rings, necklaces with spell bonuses
+- Relics & More Relics - Powerful unique items
+- Armory & Arsenal - Expanded equipment options
+- Runes - Spell ammunition system (like RuneScape magic)
+- AzureLib Armor - Animated armor support
+
+*Core Libraries (8):*
+- Spell Engine - Magic system framework
+- Spell Power Attributes - Damage scaling system
+- More RPG Library - Class system foundation
+- Ranged Weapon API, Shield API, Platform
+- Bundle API, Structure Pool API, owo-lib
+- Player Animator - Smooth animations
 
 **Removed:**
-- Iron's Spells 'n Spellbooks (replaced by RPG Series)
+- Iron's Spells 'n Spellbooks (replaced by Spell Engine ecosystem)
+- Iron's RPG Tweaks (incompatible with new RPG system)
 
 ---
 
