@@ -2,7 +2,7 @@
 
 ## Latest Updates
 
-### Version 0.0.10 (Unreleased)
+### Version 0.0.11 (2025-12-06)
 **New RPG Class System - RuneScape-Inspired Gameplay:**
 
 *Core Classes (4):*
@@ -16,29 +16,35 @@
 - Class-specific structures with unique loot and equipment
 - Special craftable weapons with unique abilities
 
-*Skill & Progression Systems (3):*
+*Skill & Progression Systems (5):*
 - Pufferfish's Skills - Customizable skill tree progression
-- Skill Tree (RPG Series) - 100+ skill nodes
-- RPG Skill Tree - Additional skill customization
+- Skill Tree (RPG Series) - 100+ skill nodes for all classes
+- More RPG Classes Skill Tree - Additional class progression paths
+- More Relics - 19+ powerful unique items with evolved forms
+- RPG Library - Enhanced skill system foundation
 
 *Equipment & Combat (6):*
-- Jewelry - Rings, necklaces with spell bonuses
-- Relics & More Relics - Powerful unique items
-- Armory & Arsenal - Expanded equipment options
-- Runes - Spell ammunition system (like RuneScape magic)
-- AzureLib Armor - Animated armor support
+- Jewelry - Rings, necklaces with spell power bonuses
+- Relics - Powerful unique items with special abilities
+- Armory & Arsenal - Massive weapon and armor expansion
+- Runes - Spell ammunition system (RuneScape-style magic)
+- AzureLib Armor - Animated armor with custom models
 
 *Core Libraries (8):*
-- Spell Engine - Magic system framework
-- Spell Power Attributes - Damage scaling system
-- More RPG Library - Class system foundation
+- Spell Engine - Complete magic casting system
+- Spell Power Attributes - Advanced damage scaling
+- More RPG Library - Class mechanics foundation
 - Ranged Weapon API, Shield API, Platform
 - Bundle API, Structure Pool API, owo-lib
-- Player Animator - Smooth animations
+- Player Animator - Smooth character animations
 
 **Removed:**
 - Iron's Spells 'n Spellbooks (replaced by Spell Engine ecosystem)
-- Iron's RPG Tweaks (incompatible with new RPG system)
+- Iron's RPG Tweaks (incompatible with new class system)
+
+**Technical:**
+- Fixed sync script mod matching for manually managed mods
+- Added preservation logic for mods not yet in modpack manifest
 
 ---
 
