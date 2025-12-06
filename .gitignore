@@ -1,0 +1,49 @@
+# Minecraft Server Runtime Files
+world/
+logs/
+crash-reports/
+debug/
+local/
+simplebackups/
+.mixin.out/
+.trash/
+
+# User Data
+banned-ips.json
+banned-players.json
+ops.json
+usercache.json
+usernamecache.json
+whitelist.json
+
+# Installer Files
+*.jar
+!run.bat
+!run.sh
+
+# Mod Files (managed by sync script)
+mods/
+libraries/
+
+# Mod Config Backups
+config/backups/
+
+# JourneyMap Data
+journeymap/
+
+# Sparse Structures Cache
+sparsestructures/
+
+# Thumbnails
+Thumbs.db
+
+# Server Properties (contains sensitive data)
+server.properties
+eula.txt
+user_jvm_args.txt
+
+# Sync Script Cache
+scripts/.modrinth-cache/
+
+# Log Sync Archives (managed by script)
+logs/mod-sync/archive-*.zip

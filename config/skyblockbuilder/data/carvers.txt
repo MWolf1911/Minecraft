@@ -1,0 +1,8 @@
+deeperdarker:cave
+deeperdarker:low_cave
+incendium:big_cave
+minecraft:canyon
+minecraft:cave
+minecraft:cave_extra_underground
+minecraft:nether_cave
+still_life:infested_tunnel

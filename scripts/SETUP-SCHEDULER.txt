@@ -1,0 +1,102 @@
+﻿SETUP: Automatic Mod Updates via Task Scheduler
+================================================
+
+This guide sets up automatic mod checking and syncing.
+Server automatically detects updates to your Modrinth pack and syncs mods.
+
+CONFIGURATION
+=============
+Check frequency: Every 5 minutes
+Sync: Immediate upon detecting update
+Server restart: Already scheduled at 00:00 in AMP
+
+STEP 1: Open Task Scheduler
+===========================
+1. Press Windows Key + R
+2. Type: taskschd.msc
+3. Click OK
+
+STEP 2: Create New Task
+=======================
+1. In left panel, click "Task Scheduler Library"
+2. In right panel, click "Create Task..."
+3. Name: "Wolf's Den 4 - Check Mod Updates"
+4. Description: "Check Modrinth for modpack updates and sync"
+5. Check: "Run with highest privileges"
+
+STEP 3: Set Schedule
+====================
+1. Go to "Triggers" tab
+2. Click "New..."
+3. Set trigger:
+   - Begin the task: On a schedule
+   - Daily
+   - At: 00:00:00 (midnight)
+   - Repeat task every: 5 minutes
+   - For a duration of: 1 day
+4. Click OK
+
+STEP 4: Set Action
+==================
+1. Go to "Actions" tab
+2. Click "New..."
+3. Set action:
+   - Action: Start a program
+   - Program/script: powershell.exe
+   - Arguments: -NoProfile -ExecutionPolicy Bypass -File "Z:\Instances\WolfsDen401\Minecraft\scripts\Sync-Mods-Modrinth.ps1"
+4. Click OK
+
+STEP 5: Advanced Settings (Optional)
+=====================================
+1. Go to "General" tab
+2. Check "Run whether user is logged in or not"
+3. Check "Run with highest privileges"
+4. Go to "Settings" tab
+5. Check "Stop the task if it runs longer than: 10 minutes"
+6. Check "If the running task does not end when requested, force it to stop"
+
+STEP 6: Finish
+==============
+1. Click OK
+2. Enter admin password if prompted
+
+HOW IT WORKS
+============
+1. Script runs every 5 minutes
+2. Queries Modrinth API for "wolfs-den-4" pack updates
+3. Compares to cached version:
+   - If no update: exits immediately (fast check)
+   - If update available: downloads .mrpack and syncs mods
+4. Only downloads verified server mods (from server-mods.txt)
+5. Backs up old mods before replacing
+6. Logs everything to: Z:\Instances\WolfsDen401\Minecraft\logs\mod-sync\
+
+TESTING
+=======
+Manual check (no sync):
+  powershell -NoProfile -ExecutionPolicy Bypass -Command "& 'Z:\Instances\WolfsDen401\Minecraft\scripts\Sync-Mods-Modrinth.ps1' -CheckOnly"
+
+Manual sync (force update):
+  powershell -NoProfile -ExecutionPolicy Bypass -Command "& 'Z:\Instances\WolfsDen401\Minecraft\scripts\Sync-Mods-Modrinth.ps1' -ForceUpdate"
+
+Normal run:
+  powershell -NoProfile -ExecutionPolicy Bypass -Command "& 'Z:\Instances\WolfsDen401\Minecraft\scripts\Sync-Mods-Modrinth.ps1'"
+
+VIEW LOGS
+=========
+Open folder: Z:\Instances\WolfsDen401\Minecraft\logs\mod-sync\
+
+RESPONSE TIME
+=============
+When you publish an update to Modrinth:
+- Server detects within 5 minutes (worst case)
+- Downloads and syncs immediately
+- Mods ready for next server restart
+
+WORKFLOW
+========
+1. You update mods in Minecraft Launcher
+2. Export/upload new .mrpack to Modrinth (publish new version)
+3. Within 5 minutes: server automatically detects and syncs
+4. At next scheduled restart (00:00): loads new mods
+5. No manual intervention needed
