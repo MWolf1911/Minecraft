@@ -1,0 +1,64 @@
+# Wolf's Den 5 Changelog
+
+## Latest Updates
+
+### Version 0.0.10 (Unreleased)
+**New RPG Class System:**
+- Added Wizards, Paladins, Rogues, and Archers (RPG Series)
+- Added Skill Tree system with 100+ unique skill nodes
+- Added LNE expansions for all 4 classes (structures & weapons)
+- Added 20+ supporting mods (Spell Engine, Jewelry, Relics, etc.)
+
+**Removed:**
+- Iron's Spells 'n Spellbooks (replaced by RPG Series)
+
+---
+
+### Version 0.0.9 (2025-12-06)
+**Server Updates:**
+- Updated NeoForge: 21.1.193 → 21.1.209
+- Updated 109 mods to latest versions
+
+**Bug Fixes:**
+- Fixed client crash (NeoForge version mismatch)
+- Removed Horseman mod (connection issues)
+
+---
+
+### Version 0.0.8
+**Added:**
+- Iron's Spells 'n Spellbooks
+- Sound Physics Remastered
+- Damage Numbers
+
+---
+
+### Version 0.0.7
+**Added:**
+- JourneyMap & Webmap
+- Open Parties and Claims
+
+**Removed:**
+- BlueMap (file size issues)
+
+---
+
+### Version 0.0.6
+- Added CraftTweaker
+- Added Recipe Generator
+
+---
+
+### Version 0.0.5
+- Added William Wyther's Overhauled Overworld
+- Updated 8 major mods
+
+---
+
+## Server Info
+- **Server:** Wolf's Den 5
+- **Minecraft:** 1.21.1
+- **Loader:** NeoForge 21.1.209
+- **Total Mods:** 220+
+
+For full changelog: github.com/yourrepo
