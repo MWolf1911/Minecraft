@@ -36,13 +36,13 @@ $MaxBackupsPerMod = 10
 $ModrinthApiBase = "https://api.modrinth.com/v2"
 
 # Git Integration Settings
-$GitEnabled = $true
+$GitEnabled = $false
 $GitRepoPath = "Z:\Instances\WolfsDen401\Minecraft"
 $GitRemoteName = "origin"
 $GitBranch = "main"
 $ChangelogPath = "Z:\Instances\WolfsDen401\Minecraft\CHANGELOG.md"
-$GitAutoCommit = $true
-$GitAutoPush = $true
+$GitAutoCommit = $false
+$GitAutoPush = $false
 # ======================================
 
 function Write-Log {

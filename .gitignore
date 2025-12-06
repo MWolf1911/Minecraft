@@ -4,7 +4,7 @@ logs/
 crash-reports/
 debug/
 local/
-simplebackups/
+simplebackups
 .mixin.out/
 .trash/
 
@@ -16,8 +16,9 @@ usercache.json
 usernamecache.json
 whitelist.json
 
-# Installer Files
+# NeoForge Installer Files
 *.jar
+*.jar.log
 !run.bat
 !run.sh
 
@@ -47,3 +48,8 @@ scripts/.modrinth-cache/
 
 # Log Sync Archives (managed by script)
 logs/mod-sync/archive-*.zip
+
+# Server Assets (track these)
+!run.bat
+!run.sh
+!server-icon.png
