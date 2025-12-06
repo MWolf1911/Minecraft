@@ -1,55 +1,10 @@
-# Minecraft Server Runtime Files
-world/
-logs/
-crash-reports/
-debug/
-local/
-simplebackups
-.mixin.out/
-.trash/
+# Minecraft Server .gitignore
+# This repository only tracks the changelog for in-game display
 
-# User Data
-banned-ips.json
-banned-players.json
-ops.json
-usercache.json
-usernamecache.json
-whitelist.json
+# Ignore everything by default
+*
+*/
 
-# NeoForge Installer Files
-*.jar
-*.jar.log
-!run.bat
-!run.sh
-
-# Mod Files (managed by sync script)
-mods/
-libraries/
-
-# Mod Config Backups
-config/backups/
-
-# JourneyMap Data
-journeymap/
-
-# Sparse Structures Cache
-sparsestructures/
-
-# Thumbnails
-Thumbs.db
-
-# Server Properties (contains sensitive data)
-server.properties
-eula.txt
-user_jvm_args.txt
-
-# Sync Script Cache
-scripts/.modrinth-cache/
-
-# Log Sync Archives (managed by script)
-logs/mod-sync/archive-*.zip
-
-# Server Assets (track these)
-!run.bat
-!run.sh
-!server-icon.png
+# Track only the changelog
+!changelog.txt
+!.gitignore
